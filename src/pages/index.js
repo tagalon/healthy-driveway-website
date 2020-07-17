@@ -136,14 +136,30 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
+    <section id="Appointment" className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+      <h3 className="text-5xl font-semibold">Ready to start your healthy driveway?</h3>
       <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
+        Please enter your email address or number to discuss further details.
       </p>
-      <p className="mt-8">
+      {/* <p className="mt-8">
         <Button size="xl">Get Started Now</Button>
-      </p>
+      </p> */}
+      <form action="POST" data-netlify='true'>
+       <div class="fields">
+         <div class="field half">
+           <input type="text" name="number"
+            id="number" placeholder="Phone Number"/>
+         </div>
+         <div class="field half">
+           <input type="email" name='email' placeholder="Email" id='email'/>
+         </div>
+         <div
+            data-netlify-recaptcha='true'></div>
+       </div>
+       <ul class='actions'>
+         <li><input type='submit' value='Send Message' class='button primary'/></li>
+       </ul>
+      </form>
     </section>
   </Layout>
 );
