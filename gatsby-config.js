@@ -10,7 +10,7 @@ module.exports = {
         pageTransitionDelay: 0,
       },
     },
-    'gatsby-react-helmet',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-theme-codebushi`,
       options: {
