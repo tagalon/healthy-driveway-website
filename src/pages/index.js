@@ -144,7 +144,7 @@ export default () => (
       {/* <p className="mt-8">
         <Button size="xl">Get Started Now</Button>
       </p> */}
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form name="contact" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field">
        <div class="fields">
          <div class="field half">
            <input type="text" name="number"
@@ -153,8 +153,6 @@ export default () => (
          <div class="field half">
            <input type="email" name='email' placeholder="Email" id='email'/>
          </div>
-         <div
-            data-netlify-recaptcha='true'></div>
        </div>
        <ul class='actions'>
          <li><input type='submit' value='Send Message' class='button primary'/></li>
