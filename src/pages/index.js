@@ -144,20 +144,17 @@ export default () => (
       {/* <p className="mt-8">
         <Button size="xl">Get Started Now</Button>
       </p> */}
-      <form name="contact" method="post" action="/thank-you/english.html" netlify data-netlify="true" data-netlify-honeypot="bot-field">
-       <div class="fields">
-         <div class="field half">
-           <input type="text" name="number"
-            id="number" placeholder="Phone Number"/>
-         </div>
-         <div class="field half">
-           <input type="email" name='email' placeholder="Email" id='email'/>
-         </div>
-       </div>
-       <ul class='actions'>
-         <li><input type='submit' value='Book your Appointment' class='button primary'/></li>
-       </ul>
-      </form>
+      <form
+      name="contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input name="name" placeholder="Your Name" type="text" />
+      <input name="email" placeholder="name@name.com" type="email" />
+      <textarea name="message" />
+      <button>Send</button>
+    </form>
     </section>
   </Layout>
 );
