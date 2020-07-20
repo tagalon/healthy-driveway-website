@@ -144,7 +144,7 @@ export default () => (
       {/* <p className="mt-8">
         <Button size="xl">Get Started Now</Button>
       </p> */}
-      <form name="contact" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field">
+      <form name="contact" method="post" action="/thank-you/english.html" netlify data-netlify="true" data-netlify-honeypot="bot-field">
        <div class="fields">
          <div class="field half">
            <input type="text" name="number"
@@ -155,7 +155,7 @@ export default () => (
          </div>
        </div>
        <ul class='actions'>
-         <li><input type='submit' value='Send Message' class='button primary'/></li>
+         <li><input type='submit' value='Book your Appointment' class='button primary'/></li>
        </ul>
       </form>
     </section>
