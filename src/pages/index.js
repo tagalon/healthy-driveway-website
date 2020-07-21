@@ -16,16 +16,15 @@ export default () => (
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Main title of your landing page
+            Healthy Driveway
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            Free landing page template to promote your business startup and generate leads for the
-            offered services
+          Welcome to the student-run business, Healthy Driveway! This business is aimed to help college students fund their finances during their undergraduate study. For only a small price tag of $100, your driveway can become spotless and look brand new again, by getting rid of oil, salt, and reducing the chance for cracks,through the power of powerwashing! We powerwash around the DFW Area. 
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
+            <Button size="lg">Book a Wash</Button>
           </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
+          <p className="mt-4 text-gray-600">Fill in your details in the form</p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
@@ -34,32 +33,29 @@ export default () => (
     </section>
     <section id="features" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold">Benefits of Powerwashing Driveway</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
+              <p className="font-semibold text-xl">Gets rid of Harmful Mold and Dust</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+              All the dirt, grime, and mildew that accumulates on your home’s exterior surfaces can be dangerous. Removing them yearly with a pressure washing helps keep you and your pets from getting sick. Springtime, when allergens run high, is the perfect time to include your home’s exterior into your spring cleaning. Power washing the exterior can reduce the amount of allergens in and around your home, and reduce the time your family spends coughing, sneezing and with watery eyes. Our  solution removes allergens, kills algae and fungus, and protects against harmful bacteria.
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
+              <p className="font-semibold text-xl">Increases Property Value of your House</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+              If you’re looking to sell, power washing could be the difference between making a sale and not. Exteriors degrade, discolor, and oxide as time passes. Because of this, your property can lose value. Power washing helps a fresh looking paint job take, making it free of peeling and chipping and it helps your home look new on its own. Obviously, a good-looking house is much easier to rent or sell.
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
+              <p className="font-semibold text-xl">Reduces Damage</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+              Your home’s exterior is exposed to harsh elements all the time; that’s it’s job! Natural conditions like sun, wind, dirt, ultraviolet rays, insects, birds –  not to mention things like acid rain, smoke, pollutants and car exhaust – constantly take a beating on your home and contribute to its soiling, discoloration, and damage.
               </p>
             </Card>
           </div>
@@ -136,25 +132,14 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id="Appointment" className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to start your healthy driveway?</h3>
+    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
       <p className="mt-8 text-xl font-light">
-        Please enter your email address or number to discuss further details.
+        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
       </p>
-      {/* <p className="mt-8">
+      <p className="mt-8">
         <Button size="xl">Get Started Now</Button>
-      </p> */}
-      <form
-      name="contact"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <input name="name" placeholder="Your Name" type="text" />
-      <input name="email" placeholder="name@name.com" type="email" />
-      <textarea name="message" />
-      <button>Send</button>
-    </form>
+      </p>
     </section>
   </Layout>
 );

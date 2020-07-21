@@ -10,11 +10,11 @@ const Header = () => (
         <div className="w-12 mr-3">
           <LogoIcon />
         </div>
-        Lander
+        Healthy Driveway
       </div>
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4" href="#features">
-          Features
+          Benefits
         </AnchorLink>
         <AnchorLink className="px-4" href="#services">
           Services
@@ -27,10 +27,11 @@ const Header = () => (
         </AnchorLink>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Text Us</Button>
+        <Button className="text-sm">Book a Wash</Button>
       </div>
     </div>
   </header>
 );
 
 export default Header;
+
