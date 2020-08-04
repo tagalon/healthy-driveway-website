@@ -1,26 +1,26 @@
 export default [
   {
-    title: 'Increased our Property Value!',
+    title: 'House Sold!',
     content:
-      'Me and my family are trying to put our house on the market, so we needed our house to look as polished as possible. Healthy driveway workers pressure washed our driveway to perfection. Our driveway used to have skid marks, weeds,cracks and oil spots, but now, it is cleaner than ever! By doing this, we were able to increase our property value! Our buyer offered a price higher than we expected because our driveway looked beautiful.',
+      'My family and I were trying to put our house on the market, so we reached out to Healthy Driveway as their prices are much more affordable compared with other DFW businesses. Our 11-year old driveway used to have all sorts of gunk trapped within the crevices, but now it is cleaner than ever! By doing this, we were able to sell the house as our exterior surfaces looked brand new!',
     customerName: 'Aruna Ganipineni',
     customerTitle: 'Happy Healthy Driveway Customer',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
-    title: 'Less dust and Mold on our Driveway.',
+    title: 'Allergy Season',
     content:
-      'I decided to contact Healthy Driveway due to concerns over safety. Harmful Mildew, Mold, and dust can build up due to microbaes, ecspecially in the summer. Our kids spend alot of time on our driveway, from drawing with chalk to playing basketball. Exposure to mold can cause a number of health issues. We are so happy with the results from Healthy Driveway, our driveway is so clean!',
+      'I decided to contact Healthy Driveway as my lovely children suffer severely from pollen allergies. Pollen sticks to the driveway and as of quarantine, our kids spend most of their time outside on our driveway itself. As our kids have actually experienced severe allergic reactions, we decided to contact Healthy Driveway to help out with our situation. We are so happy with the results from Healthy Driveway as our kids haven\'t been showing any symptons recently! Thank you so much Healthy Driveway!',
     customerName: 'Lauren Green',
     customerTitle: 'Happy Healthy Driveway Customer',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
-    title: 'Less Slippery Driveway!',
+    title: 'Efficient and Professional',
     content:
-      'Our Driveway used to be oily, and our tires would constantly skid. Healthy Driveway workers cleaned the oil and dirt off our driveway, increasing friction, and making it easier for our car to go in and out our driveway. The pricing is very reasonable, and the quality of work and friendliness of workers is great.',
-    customerName: 'Jane Smith',
-    customerTitle: 'Director of Research and Data',
+      'As both an elder and mechanic, I tend to work alot on my driveway as I am always working on personal projects which resulted in a very dirty driveway. I decided to hire Healthy Driveway to give back to my community and also for having afforable pricing. These young workers also took note of my age and practiced social distancing for the sake of my health. Thanks to Healthy Driveway, I also won\'t have to fear my tires popping again as well!',
+    customerName: 'Paul Ledge',
+    customerTitle: 'Mechanic',
     customerImage: 'https://placeimg.com/150/150/people'
   }
 ];

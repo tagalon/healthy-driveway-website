@@ -2,7 +2,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
-
+import {Link as ScrollLink} from "react-scroll";
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
@@ -13,21 +13,49 @@ const Header = () => (
         Healthy Driveway
       </div>
       <div className="flex mt-4 sm:mt-0">
-        <AnchorLink className="px-4" href="#features">
+        <ScrollLink 
+          className="px-4" 
+          to="features"
+          smooth={true}
+          offset={10}
+          duration={500}
+          delay={1000}
+          href="#features">
           Benefits
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#services">
+        </ScrollLink>
+        <ScrollLink 
+          className="px-4" 
+          to="services"
+          smooth={true}
+          offset={10}
+          duration={500}
+          delay={1000}
+          href="#services">
           Services
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#stats">
-          Stats
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#testimonials">
-          Testimonials
-        </AnchorLink>
+        </ScrollLink>
+        <ScrollLink 
+          className="px-4" 
+          to="stats"
+          smooth={true}
+          offset={10}
+          duration={500}
+          delay={1000}
+          href="#stats">
+          Statistics
+        </ScrollLink>
+        <ScrollLink 
+          className="px-4" 
+          to="testimonials"
+          smooth={true}
+          offset={10}
+          duration={500}
+          delay={1000}
+          href="#testimonials">
+          Reviews
+        </ScrollLink>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Book a Wash</Button>
+        <Button className="text-sm">Book your Healthy Driveway</Button>
       </div>
     </div>
   </header>
@@ -35,3 +63,11 @@ const Header = () => (
 
 export default Header;
 
+{/* <ScrollLink activeClass="active"
+                              to="pricing"
+                              href="pricing"
+                              smooth={true}
+                              offset={10}
+                              duration={500}
+                              delay={1000}
+                              >Pricing</ScrollLink> */}

@@ -9,7 +9,7 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
-
+import "../css/form.css"
 export default () => (
   <Layout>
     <section className="pt-20 md:pt-40">
@@ -19,12 +19,11 @@ export default () => (
             Healthy Driveway
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-          Welcome to the student-run business, Healthy Driveway! This business is aimed to help college students fund their finances during their undergraduate study. For only a small price tag of $100, your driveway can become spotless and look brand new again, by getting rid of oil, salt, and reducing the chance for cracks,through the power of powerwashing! We powerwash around the DFW Area. 
+          Welcome to Healthy Driveway! We are a student-run pressure-washing business aimed to help college students fund their ungraduate finances. As of our opening, we are offering your driveway, porch, and walkways to all be cleaned at only $100! Please book an appointment with us! 
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Book a Wash</Button>
+            <Button size="lg">Book your future Healthy Driveway</Button>
           </p>
-          <p className="mt-4 text-gray-600">Fill in your details in the form</p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
@@ -39,15 +38,19 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Gets rid of Harmful Mold and Dust</p>
               <p className="mt-4">
-              All the dirt, grime, and mildew that accumulates on your home’s exterior surfaces can be dangerous. Removing them yearly with a pressure washing helps keep you and your pets from getting sick. Springtime, when allergens run high, is the perfect time to include your home’s exterior into your spring cleaning. Power washing the exterior can reduce the amount of allergens in and around your home, and reduce the time your family spends coughing, sneezing and with watery eyes. Our  solution removes allergens, kills algae and fungus, and protects against harmful bacteria.
+              Accumulation of dirt, grime, and mildew on your home’s exterior surfaces can lead to maintanence and installation issues within the base structures of these surfaces. 
+              Yearly pressure washing will prolong the life expectancies for these surfaces and keeps them looking healthy! 
+              Another benefit of pressure washing is that it can reduce the amount of allergens within and outside of your environment. Our solution removes allergens, kills algae and fungus, and protects against harmful bacteria.
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Increases Property Value of your House</p>
+              <p className="font-semibold text-xl">Retains Property Value</p>
               <p className="mt-4">
-              If you’re looking to sell, power washing could be the difference between making a sale and not. Exteriors degrade, discolor, and oxide as time passes. Because of this, your property can lose value. Power washing helps a fresh looking paint job take, making it free of peeling and chipping and it helps your home look new on its own. Obviously, a good-looking house is much easier to rent or sell.
+              If you’re looking to sell, pressure washing could be the difference between making a sale and not. 
+              Exteriors degrade, discolor, and oxide as time passes. As a result, your property can lose value. 
+              Pressure washing helps remove all the gunk off these exterior surfaces and makes them brand new again.
               </p>
             </Card>
           </div>
@@ -55,7 +58,8 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Reduces Damage</p>
               <p className="mt-4">
-              Your home’s exterior is exposed to harsh elements all the time; that’s it’s job! Natural conditions like sun, wind, dirt, ultraviolet rays, insects, birds –  not to mention things like acid rain, smoke, pollutants and car exhaust – constantly take a beating on your home and contribute to its soiling, discoloration, and damage.
+              Natural conditions like sun, wind, dirt, ultraviolet rays, insects, birds –  not to mention things like acid rain, smoke, pollutants and car exhaust – constantly take a beating on your home and contribute to its soiling, discoloration, and damage.
+              Pressure washing can eliminate dirt trapped within the crevices in your exterior surfaces, preventing further deterrioation within your driveway. 
               </p>
             </Card>
           </div>
@@ -73,7 +77,9 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<iframe frameborder="0" class="juxtapose" width="100%" height="4032" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=76dd44d0-d5d9-11ea-bf88-a15b6c7adf9a">
+
+      </iframe>}
     />
     <SplitSection
       reverseOrder
@@ -132,13 +138,41 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Make your Driveway Beautiful again.</h3>
+    <section id='form' className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+      <h3 className="text-5xl font-semibold">Make your driveway look healthy again!</h3>
       <p className="mt-8 text-xl font-light">
-       Book a Wash and fill out your details in the form.
+       Book your appointment here!
       </p>
       <p className="mt-8">
-        <Button size="xl">Book A wash</Button>
+      <form action="/received" class="form-contact" name="form-contact" className="has-shadow" netlify netlify-honeypot="bot-field" method="post">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <div>
+                  <label for="First Name">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your name"
+                      labelHidden>
+                    </input>
+                  </label>
+                  </div>
+                  <div>
+                  <label for="Phone/Email">
+                    <input
+                      type="text"
+                      name="contact"
+                      placeholder="Phone # or Email"
+                      labelHidden
+                      required>
+                    </input>
+                  </label>
+                  </div>
+                  <div className="mt-24">
+                    <Button type="submit" color="primary" wide>
+                      Submit
+                    </Button>
+                  </div>
+                </form>
       </p>
     </section>
   </Layout>
