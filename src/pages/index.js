@@ -144,7 +144,7 @@ export default () => (
        Book your appointment here!
       </p>
       <p className="mt-8">
-      <form action="/received" class="form-contact" name="form-contact" className="has-shadow" netlify netlify-honeypot="bot-field" method="post">
+      <form action="/received" class="form-contact" name="form-contact" className="has-shadow" netlify data-netlify="true" netlify-honeypot="bot-field" method="post">
                   <input type="hidden" name="form-name" value="contact" />
                   <div>
                   <label for="First Name">
