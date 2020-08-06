@@ -181,10 +181,7 @@ export default () => (
                     <label>Your Email: <input type="email" name="email" /></label>
                   </p>
                   <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                  </p>
-                  <p>
-                    <button type="submit">Send</button>
+                    <Button type="submit" color='primary'>Send</Button>
                   </p>
                 </form>
               </p>
