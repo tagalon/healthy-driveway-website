@@ -144,7 +144,7 @@ export default () => (
        Book your appointment here!
       </p>
       <p className="mt-8">
-      <form action="/received" class="form-contact" name="form-contact" className="has-shadow" netlify netlify-honeypot="bot-field" method="post">
+      {/* <form action="/received" class="form-contact" name="form-contact" className="has-shadow" netlify netlify-honeypot="bot-field" method="post">
                   <input type="hidden" name="form-name" value="contact" />
                   <div>
                   <label for="First Name">
@@ -172,8 +172,29 @@ export default () => (
                       Submit
                     </Button>
                   </div>
+                </form> */}
+                <form name="contact" method="POST" data-netlify="true">
+                  <p>
+                    <label>Your Name: <input type="text" name="name" /></label>   
+                  </p>
+                  <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                    </select>
+                    </label>
+                  </p>
+                  <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                  </p>
+                  <p>
+                    <button type="submit">Send</button>
+                  </p>
                 </form>
-      </p>
-    </section>
+              </p>
+        </section>
   </Layout>
 );
