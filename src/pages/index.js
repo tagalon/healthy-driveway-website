@@ -70,14 +70,14 @@ export default () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+          <h3 className="text-3xl font-semibold leading-tight">Complete Change!</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-            against the closest competitors
+            "Healthy Driveway uses their own cleaning solution which has made my driveway look spotless!" 
+            Healthy Driveway Customer, Srini
           </p>
         </div>
       }
-      secondarySlot={<iframe frameborder="0" class="juxtapose" width="100%" height="4032" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=76dd44d0-d5d9-11ea-bf88-a15b6c7adf9a">
+      secondarySlot={<iframe frameborder="0" class="juxtapose" width="100%" height="700" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=76dd44d0-d5d9-11ea-bf88-a15b6c7adf9a">
 
       </iframe>}
     />
@@ -86,7 +86,7 @@ export default () => (
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
           <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
+            Noticing the real difference!
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             Once the market analysis process is completed our staff will search for opportunities
@@ -112,23 +112,6 @@ export default () => (
     />
     <section id="stats" className="py-20 lg:pt-32">
       <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">Our customers get results</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimonials" className="py-20 lg:py-40">
-      <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
           {customerData.map(customer => (
             <div key={customer.customerName} className="flex-1 px-3">
@@ -138,53 +121,10 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id='form' className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+    <section id='contact' className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
       <h3 className="text-5xl font-semibold">Make your driveway look healthy again!</h3>
       <p className="mt-8 text-xl font-light">
-       Book your appointment here!
-      </p>
-      <p className="mt-8">
-      <form action="/received" class="form-contact" name="form-contact" className="has-shadow" netlify data-netlify="true" netlify-honeypot="bot-field" method="post">
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div>
-                  <label for="First Name">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Your name"
-                      labelHidden>
-                    </input>
-                  </label>
-                  </div>
-                  <div>
-                  <label for="Phone/Email">
-                    <input
-                      type="text"
-                      name="contact"
-                      placeholder="Phone # or Email"
-                      labelHidden
-                      required>
-                    </input>
-                  </label>
-                  </div>
-                  <div className="mt-24">
-                    <Button type="submit" color="primary" wide>
-                      Submit
-                    </Button>
-                  </div>
-                </form>
-                {/* <form name="contact" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field">
-                  <p>
-                    <label>Your Name: <input type="text" name="name" /></label>   
-                  </p>
-                  <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
-                  </p>
-                  <p>
-                    <Button type="submit" color='primary'>Send</Button>
-                  </p>
-                </form> */}
-              </p>
+       Please text me at 4698352290 or email healthydriveway@gmail.com for your driveway appointment!</p>
         </section>
   </Layout>
 );

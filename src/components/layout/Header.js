@@ -17,9 +17,9 @@ const Header = () => (
           className="px-4" 
           to="features"
           smooth={true}
-          offset={10}
+          offset={0}
           duration={500}
-          delay={1000}
+          delay={500}
           href="#features">
           Benefits
         </ScrollLink>
@@ -27,13 +27,13 @@ const Header = () => (
           className="px-4" 
           to="services"
           smooth={true}
-          offset={10}
+          offset={0}
           duration={500}
-          delay={1000}
+          delay={500}
           href="#services">
           Services
         </ScrollLink>
-        <ScrollLink 
+        {/* <ScrollLink 
           className="px-4" 
           to="stats"
           smooth={true}
@@ -42,20 +42,26 @@ const Header = () => (
           delay={1000}
           href="#stats">
           Statistics
-        </ScrollLink>
+        </ScrollLink> */}
         <ScrollLink 
           className="px-4" 
-          to="testimonials"
+          to="stats"
           smooth={true}
-          offset={10}
+          offset={0}
           duration={500}
-          delay={1000}
+          delay={500}
           href="#testimonials">
           Reviews
         </ScrollLink>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Book your Healthy Driveway</Button>
+        <ScrollLink to="contact" 
+          smooth={true}
+          offset={0}
+          duration={500}
+          delay={500}
+          href="#contact">
+          Book your Healthy Driveway</ScrollLink>
       </div>
     </div>
   </header>
