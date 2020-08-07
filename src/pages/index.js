@@ -10,6 +10,7 @@ import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import "../css/form.css"
+import {Link as ScrollLink} from "react-scroll"
 export default () => (
   <Layout>
     <section className="pt-20 md:pt-40">
@@ -21,8 +22,19 @@ export default () => (
           <p className="text-xl lg:text-2xl mt-6 font-light">
           Welcome to Healthy Driveway! We are a student-run pressure-washing business aimed to help college students fund their ungraduate finances. As of our opening, we are offering your driveway, porch, and walkways to all be cleaned at only $100! Please book an appointment with us! 
           </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Book your future Healthy Driveway</Button>
+          {/* <p className="mt-8 md:mt-12"> */}
+          <p className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+          <ScrollLink
+          class='a' 
+          className="px-4" 
+          to="contact"
+          smooth={true}
+          offset={0}
+          duration={500}
+          delay={500}
+          href="#contact">
+          Text me here!
+          </ScrollLink>
           </p>
         </div>
         <div className="lg:w-1/2">
@@ -36,7 +48,7 @@ export default () => (
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Gets rid of Harmful Mold and Dust</p>
+              <p className="font-semibold text-xl">Clean and Efficient</p>
               <p className="mt-4">
               Accumulation of dirt, grime, and mildew on your home’s exterior surfaces can lead to maintanence and installation issues within the base structures of these surfaces. 
               Yearly pressure washing will prolong the life expectancies for these surfaces and keeps them looking healthy! 
