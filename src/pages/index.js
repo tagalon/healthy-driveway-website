@@ -24,6 +24,7 @@ export default () => (
           </p>
           {/* <p className="mt-8 md:mt-12"> */}
           <p className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+          <div>
           <ScrollLink
           class='a' 
           className="px-4" 
@@ -35,6 +36,7 @@ export default () => (
           href="#contact">
           Text me here!
           </ScrollLink>
+          </div>
           </p>
         </div>
         <div className="lg:w-1/2">

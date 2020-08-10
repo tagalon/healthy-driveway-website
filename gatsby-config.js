@@ -1,4 +1,19 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Healthy Driveway',
+    author: 'Rahul Ravella',
+    description: 'dummy content',
+    siteUrl: 'healthydriveway.com',
+    social: {
+        linkedin: 'https://www.linkedin.com/in/faesel-saeed-a97b1614',
+        twitter: 'https://twitter.com/@faeselsaeed',
+        twitterUsername: '@faeselsaeed',
+        github: 'https://github.com/faesel',
+        flickr: 'https://www.flickr.com/photos/faesel/',
+        email: 'faesel@outlook.com'
+    },
+    rssFeedUrl: '/rss.xml'
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
