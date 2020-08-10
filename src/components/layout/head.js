@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
@@ -43,3 +44,5 @@ const Head = ({ pageTitle, title, url, description, imageUrl, imageAlt, type, da
 }
 
 export default Head
+=======
+>>>>>>> 387969c1aad750eeb7544077dd9898ea057d8189

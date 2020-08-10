@@ -5,12 +5,17 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
+<<<<<<< HEAD
     "develop": "gatsby develop",
     "build": "env-cmd -f .env.development gatsby build"
+=======
+    "develop": "env-cmd -f .env.development gatsby develop",
+    "build": "gatsby build"
+>>>>>>> 387969c1aad750eeb7544077dd9898ea057d8189
   },
   "dependencies": {
     "gatsby": "^2.18.18",
-    "gatsby-plugin-google-analytics": "^2.3.11",
+    "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-theme-codebushi": "1.0.0",
     "react": "^16.12.0",
