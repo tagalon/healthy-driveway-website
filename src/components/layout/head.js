@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import logo from '/HealthyDrivewayLogo.ico'
 const Head = ({ pageTitle, title, url, description, imageUrl, imageAlt, type, datePublished }) => {
     const data = useStaticQuery(graphql`
         query {
@@ -21,7 +21,7 @@ const Head = ({ pageTitle, title, url, description, imageUrl, imageAlt, type, da
         <>
             <Helmet title={`${data.site.siteMetadata.title}`} />
             <Helmet>
-                <link rel="icon"/>
+                <link rel="icon" href={logo}/>
 ​
                 <meta name="twitter:card" content="summary_large_image"></meta>
                 <meta name="twitter:site" contact={data.site.siteMetadata.social.twitterUsername}></meta>
@@ -44,5 +44,3 @@ const Head = ({ pageTitle, title, url, description, imageUrl, imageAlt, type, da
 }
 
 export default Head
-=======
->>>>>>> 387969c1aad750eeb7544077dd9898ea057d8189
